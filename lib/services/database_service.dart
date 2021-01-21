@@ -17,6 +17,7 @@ class DatabaseService {
       products.add(new Product(
           name: "CYBERPUNK",
           price: "199.99",
+          amount: 0,
           shortDesc: " Si-Fi, Akcja, RPG",
           desc:
               "Cyberpunk 2077 jest fabularną grą akcji, zawierającą elementy strzelanek pierwszoosobowych. Gracz wciela się w V, którego płeć, głos, wygląd (twarz, fryzurę, sylwetkę, modyfikacje ciała, rozmiar przyrodzenia czy biustu), pochodzenie i ubiór może dostosować według własnych upodobań.",

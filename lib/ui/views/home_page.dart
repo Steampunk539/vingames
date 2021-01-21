@@ -308,7 +308,7 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                           border: Border.all(color: Colors.white)),
                       child: Text(
-                        "${model.orderManager.basket.length}",
+                        "${model.orderManager.amountInBasket()}",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 11, fontWeight: FontWeight.w900),

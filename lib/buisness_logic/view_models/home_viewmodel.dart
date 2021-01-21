@@ -16,6 +16,7 @@ class HomeViewModel extends ViewModel {
   }
 
   void addToBasket(Product product) {
+    product.amount = 1;
     orderManager.addProductToBasket(product);
     notifyListeners();
   }

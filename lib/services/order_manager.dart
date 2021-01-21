@@ -22,6 +22,14 @@ class OrderManager {
     return price;
   }
 
+  int amountInBasket() {
+    int amount = 0;
+    for (Product product in basket) {
+      amount += product.amount;
+    }
+    return amount;
+  }
+
   void setPickUpDate(DateTime time) {
     pickUpDate = time;
   }

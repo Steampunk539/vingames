@@ -10,4 +10,8 @@ class BasketViewModel extends ViewModel {
     orderManager.clearBasket();
     navigationService.navigateToAndReplaceUntil(ThankViewRoute);
   }
+
+  void goToMainPage() {
+    navigationService.navigateToAndReplaceUntil(HomeViewRoute);
+  }
 }
