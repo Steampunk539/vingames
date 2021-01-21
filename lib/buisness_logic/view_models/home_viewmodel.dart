@@ -14,4 +14,9 @@ class HomeViewModel extends ViewModel {
   void goToBasketPage() {
     navigationService.navigateToAndReplaceUntil(BasketViewRoute);
   }
+
+  void addToBasket(Product product) {
+    orderManager.addProductToBasket(product);
+    notifyListeners();
+  }
 }

@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Kawa na godzine',
+        title: 'Vingames',
         theme: ThemeData(
-          textTheme: GoogleFonts.robotoTextTheme(
+          textTheme: GoogleFonts.openSansTextTheme(
             Theme.of(context).textTheme,
           ),
         ),
