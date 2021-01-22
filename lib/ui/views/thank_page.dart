@@ -6,7 +6,7 @@ class ThankPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: color_secondary,
+      backgroundColor: color_bg,
     );
   }
 }

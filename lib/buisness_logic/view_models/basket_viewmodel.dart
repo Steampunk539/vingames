@@ -14,4 +14,18 @@ class BasketViewModel extends ViewModel {
   void goToMainPage() {
     navigationService.navigateToAndReplaceUntil(HomeViewRoute);
   }
+
+  void addAmount(int i) {
+    orderManager.basket[i].amount++;
+    notifyListeners();
+  }
+
+  void removeAmount(int i) {
+    if (orderManager.basket[i].amount == 1) {
+      orderManager.basket.removeAt(i);
+    } else {
+      orderManager.basket[i].amount--;
+    }
+    notifyListeners();
+  }
 }
