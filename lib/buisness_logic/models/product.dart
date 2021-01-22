@@ -1,5 +1,8 @@
 import 'package:flutter/widgets.dart';
 
+/**
+ * Model podstawowej klasy produktu
+ */
 class Product {
   ImageProvider imageProvider;
   String name;

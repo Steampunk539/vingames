@@ -5,7 +5,13 @@ import 'package:vingames/services/service_navigation.dart';
 import 'package:vingames/ui/views/home_page.dart';
 import 'package:vingames/utils/router.dart';
 
+/**
+ * Główna funkcja aplikacji
+ * W niej uruchamiane są serwisy i
+ * główny ekran aplikacji
+ */
 void main() async {
+  //Inizjalizujemy singletony
   setupLocator();
   runApp(MyApp());
 }

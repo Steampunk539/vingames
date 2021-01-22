@@ -1,6 +1,9 @@
 import 'package:flutter/rendering.dart';
 import 'package:vingames/buisness_logic/models/product.dart';
 
+/**
+ * Implementacja bazy danych
+ */
 class DatabaseService {
   void addNewProduct() {
     //TODO Implement with remote database
@@ -11,6 +14,9 @@ class DatabaseService {
   void updateProduct() {
     //TODO Implement with remote database
   }
+  /**
+   * Fałszywe wstrzyknięcie produktów
+   */
   List<Product> getAllProducts() {
     List<Product> products = new List();
     for (int i = 0; i < 100; i++) {
