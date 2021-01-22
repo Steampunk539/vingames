@@ -9,22 +9,15 @@ class OrderManager {
   DateTime pickUpDate = new DateTime.now();
   OrderManager() {
     allProducts = DatabaseService().getAllProducts();
-    Product product = allProducts[0];
-    product.amount = 1;
-    basket.add(product);
-    basket.add(product);
-    basket.add(product);
-    basket.add(product);
-    basket.add(product);
   }
   void clearBasket() {
-    basket = new List();
+    basket = [];
   }
 
   double calculatePrice() {
     double price = 0;
     for (Product product in basket) {
-      price += double.parse(product.price * product.amount);
+      price += double.parse(product.price) * product.amount;
     }
     return price;
   }

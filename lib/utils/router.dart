@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:vingames/ui/views/basket_page.dart';
 import 'package:vingames/ui/views/home_page.dart';
 import 'package:vingames/ui/views/product_page.dart';
-import 'package:vingames/ui/views/thank_page.dart';
+import 'package:vingames/ui/views/payment_page.dart';
 import 'package:vingames/utils/statics/route_names.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -15,7 +15,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case BasketViewRoute:
       return _getPageRoute(routeName: settings.name, viewToShow: BasketPage());
     case ThankViewRoute:
-      return _getPageRoute(routeName: settings.name, viewToShow: ThankPage());
+      return _getPageRoute(routeName: settings.name, viewToShow: PaymentPage());
     default:
       return MaterialPageRoute(
           builder: (_) => Scaffold(
